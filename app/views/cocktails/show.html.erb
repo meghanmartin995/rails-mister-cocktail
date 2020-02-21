@@ -1,0 +1,53 @@
+<div class="mynewcontainer">
+
+<div class="cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/random)">
+
+
+<h1><%=@cocktail.name%></h1>
+
+
+</div>
+
+<div class="pagecontainer">
+
+<div class="formcontainer">
+
+<%= simple_form_for([@cocktail, @dose]) do |f| %>
+  <%= f.association :ingredient %>
+  <%= f.input :description %>
+  <%= f.submit "add an ingredient", class: "btn-primary"%>
+<% end %>
+</div>
+
+<div class="ingredients">
+  <h2>INGREDIENTS</h2>
+
+
+<% @cocktail.doses.each do |dose| %>
+<div class="details">
+  <p><%= link_to "x", dose_path(dose),
+      method: :delete,
+      data: { confirm: "Are you sure you want to delete?" } %></p>
+<p><%= dose.ingredient.name %>  </p>
+<p class="description"><%= dose.description%></p>
+
+      </div>
+<% end %>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+

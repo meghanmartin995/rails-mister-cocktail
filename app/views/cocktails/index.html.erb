@@ -1,0 +1,31 @@
+
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1570716893556-8cae2e541ba8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);">
+  <div class="navbar">
+      <ul>
+        <li>
+          <a href="/cocktails">HOME</a>
+        </li>
+        <li>
+          <a href="/cocktails">COCKTAILS</a>
+        </li>
+      </ul>
+    </div>
+  <div class="my-button-container">
+    <a class="btn btn-flat" href="<%= new_cocktail_path %>">MAKE A COCKTAIL</a>
+  </div>
+</div>
+
+
+
+<div class="cocktailcontainer">
+<% @cocktails.each do |cocktail| %>
+<div class="cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/random?sig=123)">
+  <h2><%= link_to cocktail.name, cocktail_path(cocktail)%></h2>
+</div>
+<% end %>
+
+</div>
+
+
+

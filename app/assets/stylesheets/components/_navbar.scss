@@ -1,12 +1,26 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.navbar {
+  background: transparent;
+  display: table;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+  font-spacing: 2px;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar a:hover {
+  opacity: .6;
+  transition: all .7s ease;
 }
+.navbar ul {
+  list-style-type: none;
+  margin-top: 16px;
+}
+
+.navbar li {
+  display: inline;
+  padding: 20px;
+}
+

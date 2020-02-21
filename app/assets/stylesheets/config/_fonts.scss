@@ -14,3 +14,21 @@ $headers-font: "Raleway", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+.content h1 {
+ text-align: center;
+ margin-top: 20px;
+}
+
+h1, h2, p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.simple_form label {
+  font-weight: lighter;
+}
+

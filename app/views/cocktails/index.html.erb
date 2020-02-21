@@ -7,7 +7,7 @@
           <a href="/cocktails">HOME</a>
         </li>
         <li>
-          <a href="/cocktails">COCKTAILS</a>
+          <a href="#cocktailall">COCKTAILS</a>
         </li>
       </ul>
     </div>
@@ -20,7 +20,7 @@
 
 <div class="cocktailcontainer">
 <% @cocktails.each do |cocktail| %>
-<div class="cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= "https://source.unsplash.com/random?sig=#{rand(1..1000)}&?cocktail" %>)">
+<div class="cocktail" id="cocktailall"style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= "https://source.unsplash.com/random?sig=#{rand(1..1000)}&?cocktail" %>)">
   <h2><%= link_to cocktail.name, cocktail_path(cocktail)%></h2>
 </div>
 <% end %>

@@ -64,6 +64,13 @@ body {
 
 .pagecontainer {
   display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  width: 80%;
+}
+
+.simpleformcontainer {
+  flex-grow: 1;
 }
 
 .ingredients {

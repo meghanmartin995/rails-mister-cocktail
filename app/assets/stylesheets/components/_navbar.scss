@@ -7,7 +7,7 @@
   color: white;
   text-decoration: none;
   font-weight: lighter;
-  font-spacing: 2px;
+  letter-spacing: 2px;
 }
 
 .navbar a:hover {
@@ -23,4 +23,31 @@
   display: inline;
   padding: 20px;
 }
+
+.navbarshow {
+  background: transparent;
+  display: table;
+}
+
+.navbarshow a {
+  color: black;
+  text-decoration: none;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.navbarshow a:hover {
+  opacity: .6;
+  transition: all .7s ease;
+}
+.navbarshow ul {
+  list-style-type: none;
+  margin-top: 16px;
+}
+
+.navbarshow li {
+  display: inline;
+  padding: 20px;
+}
+
 

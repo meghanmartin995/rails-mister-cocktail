@@ -11,10 +11,11 @@
     </div>
 <div class="mynewcontainer">
 <% if @cocktail.photo %>
-<div class="cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= "https://source.unsplash.com/random?sig=#{rand(1..1000)}&?cocktail" %>);">
+ <div class="cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path @cocktail.photo.key %>);">
 
 <% else %>
- <div class="cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path @cocktail.photo.key %>);">
+
+  <div class="cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= "https://source.unsplash.com/random?sig=#{rand(1..1000)}&?cocktail" %>);">
 <% end %>
 
 

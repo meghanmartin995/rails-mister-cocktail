@@ -1,6 +1,6 @@
 <div class="mynewcontainer">
 
-<div class="cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path "photo.jpg" %>)">
+<div class="cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path @cocktail.photo.key %>);">
 
 
 <h1><%=@cocktail.name%></h1>
